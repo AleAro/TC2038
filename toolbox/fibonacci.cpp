@@ -1,8 +1,6 @@
 #include <iostream>
 #include <map>
 
-
-
 using namespace std;
 
 // int fib(int n){
@@ -12,8 +10,6 @@ using namespace std;
 //     }
 //     return fib(n-1) + fib(n-2);
 // }
-
-
 
 // int fibSuma(int n){
 //     int FF[n];
@@ -25,9 +21,8 @@ using namespace std;
 //     return FF[n];
 // }
 
-
-
-map<int, int> init_map() {
+map<int, int> init_map()
+{
     map<int, int> temp;
     temp[0] = 0;
     temp[1] = 1;
@@ -36,17 +31,22 @@ map<int, int> init_map() {
 
 map<int, int> my_map = init_map();
 
-int fib(int n) {
-    if (n == 0) return 0;
-    if (n == 1) return 1;
-    if (my_map.find(n) != my_map.end()) {
+int fib(int n)
+{
+    if (n == 0)
+        return 0;
+    if (n == 1)
+        return 1;
+    if (my_map.find(n) != my_map.end())
+    {
         return my_map[n];
     }
-    my_map[n] = fib(n-1) + fib(n-2);
+    my_map[n] = fib(n - 1) + fib(n - 2);
     return my_map[n];
 }
 
-int main() {
+int main()
+{
     int n;
     cout << "Número: ";
     cin >> n;
