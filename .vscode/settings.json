@@ -1,7 +1,9 @@
 {
-    "files.associations": {
-        "ostream": "cpp",
-        "vector": "cpp",
-        "__config": "cpp"
-    }
+  "files.associations": {
+    "ostream": "cpp",
+    "vector": "cpp",
+    "__config": "cpp",
+    "iosfwd": "cpp",
+    "queue": "cpp"
+  }
 }
